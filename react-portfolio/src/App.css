@@ -1,0 +1,98 @@
+* {
+  font-family: "Merriweather", serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+#header-name {
+  margin-left: 20px;
+}
+
+.navbar {
+  background-color: rgb(115, 133, 114);
+  margin-bottom: 100px;
+}
+
+.nav-link {
+  font-family: "Birthstone", cursive;
+  text-decoration: none;
+  color: black;
+  font-size: 65px;
+}
+.nav-link:hover {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon-size {
+  font-size: 35px;
+}
+
+.fa-file-download {
+  color: black;
+}
+
+.headshot {
+  justify-content: center;
+  align-items: center;
+  width: 63%;
+  height: 350px;
+  border-radius: 60%;
+  border: solid rgb(115, 133, 114) 1px;
+}
+
+.name-div {
+  line-height: 3;
+  letter-spacing: 1px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.resume {
+  color: black;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.footer {
+  background-color: rgb(115, 133, 114);
+}
+
+.about-img {
+  height: 550px;
+  border: rgb(115, 133, 114) solid 1px;
+}
+
+.about-paragraph {
+  line-height: 1.5;
+  text-indent: 50px;
+  letter-spacing: 3px;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1800px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 480px) {
+}
