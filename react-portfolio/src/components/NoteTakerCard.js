@@ -8,7 +8,7 @@ const NoteTakerCard = () => {
           <div class="card-image">
             <img
               src="./images/ExpressNoteTaker.png"
-              alt="Image of the project Express Note Taker"
+              alt="Project Express Note Taker"
             />
           </div>
           <div class="card-content">

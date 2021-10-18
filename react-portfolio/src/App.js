@@ -1,21 +1,21 @@
+import React from "react";
 import "./App.css";
 import NameCard from "./components/NameCard";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+import PFFCard from "./components/PFFCard";
+import SkyGazerCard from "./components/SkyGazerCard";
+import NoteTakerCard from "./components/NoteTakerCard";
 
 function App() {
   return (
-    <div className="container">
-      <Header
-        onAdd={() => setShowAddTask(!showAddTask)}
-        showAdd={showAddTask}
-      />
+    <div>
+      <Header />
       <NameCard />
-      {showAddTask && <AddTask onAdd={addTask} />}
-      {tasks.length > 0 ? (
-        <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
-      ) : (
-        "No Tasks To Show"
-      )}
+      <PFFCard />
+      <NoteTakerCard />
+      <SkyGazerCard />
+      <Footer />
     </div>
   );
 }

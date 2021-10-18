@@ -6,10 +6,7 @@ const SkyGazerCard = () => {
       <div class="col s12 m6">
         <div class="card">
           <div class="card-image">
-            <img
-              src="./images/SkyGazer.png"
-              alt="Image of the project Sky Gazer"
-            />
+            <img src="./images/SkyGazer.png" alt="Project Sky Gazer" />
           </div>
           <div class="card-content">
             <p class="center-align">

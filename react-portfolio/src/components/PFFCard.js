@@ -8,7 +8,7 @@ const PFFCard = () => {
           <div class="card-image">
             <img
               src="./images/PFF.png"
-              alt="Image of the project Platonic Friends Forever"
+              alt="Project Platonic Friends Forever"
             />
           </div>
           <div class="card-content">
