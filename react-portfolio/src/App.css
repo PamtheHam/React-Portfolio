@@ -65,6 +65,9 @@ a {
   align-items: center;
 }
 
+.projectsPage {
+  background-image: url(https://i.gifer.com/1zLU.gif);
+}
 .resume {
   color: black;
   padding: 5px 10px;
