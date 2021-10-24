@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: #dffdff;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -33,7 +33,7 @@ main {
   font-size: 65px;
 }
 .nav-link:hover {
-  color: black;
+  color: rgb(47, 47, 47);
 }
 
 a {

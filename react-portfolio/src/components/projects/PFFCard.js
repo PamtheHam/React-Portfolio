@@ -21,7 +21,7 @@ const PFFCard = () => {
             </p>
           </div>
           <div class="card-action hoverable center-align">
-            <a href="https://github.com/PamtheHam/platonic-friends-forever">
+            <a href="https://pfforever.herokuapp.com">
               Platonic Friends Forever on Heroku
             </a>
           </div>
