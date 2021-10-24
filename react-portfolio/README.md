@@ -1,17 +1,15 @@
 # My-Portfolio
 
-Here is the url of my site deployed:
-
-<!-- https://pamtheham.github.io/My-Portfolio/ add heroku link -->
-
 ## Description
 
 This webpage is dedicated to all of my most valued work and is a reflection of my unique personality and talents.
-I styled the page using CSS pseudo-classes, media querys, and flexboxes. I included links to my personal social media accounts including Github, Instagram, and LinkedIn.
+I styled the page using React.js. I included links to my social media accounts including Github and LinkedIn.
 
 ## Pictures of Application
 
 ![Screenshot of my portfolio]()
+
+Here is the link to my [Deployed Application](https://pamtheham.github.io/React-Portfolio/)
 
 <br>
 
@@ -36,9 +34,7 @@ I styled the page using CSS pseudo-classes, media querys, and flexboxes. I inclu
 #### Back End
 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)&nbsp;
-![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)&nbsp;
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp;
-![Sequelize](https://img.shields.io/badge/Sequelize-blue?style=for-the-badge&logo=Sequelize)&nbsp;
 
 ## Credits
 
