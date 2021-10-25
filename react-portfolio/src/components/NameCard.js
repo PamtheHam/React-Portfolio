@@ -6,8 +6,8 @@ const NameCard = () => {
       <div className="row">
         <div className="col s6">
           <img
-            src="./images/Pamela Hammond 2.jpeg"
-            className="headshot center-align"
+            src="./images/PamelaHammond2.jpeg"
+            className="headshot"
             alt="Pamela Hammond"
           />
         </div>

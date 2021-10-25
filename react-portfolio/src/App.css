@@ -23,7 +23,6 @@ main {
 
 .navbar {
   background-color: rgb(115, 133, 114);
-  margin-bottom: 100px;
 }
 
 .nav-link {
@@ -61,8 +60,6 @@ a {
   line-height: 3;
   letter-spacing: 1px;
   height: 300px;
-  display: flex;
-  align-items: center;
 }
 
 .projectsPage {
@@ -87,6 +84,46 @@ a {
   line-height: 1.5;
   text-indent: 50px;
   letter-spacing: 3px;
+}
+
+.row-auth-wrapper {
+  margin: auto;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px;
+  padding: 20px 30px;
+  width: 100%;
+  border-radius: 10px;
+}
+.form {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-header {
+  margin-top: 0;
+}
+
+.input-field {
+  width: 100%;
+}
+
+.submit-button {
+  width: 20%;
+  background-color: rgb(47, 47, 47);
+}
+
+.submit-button:hover {
+  background-color: rgb(115, 133, 114);
 }
 
 /* media queries */

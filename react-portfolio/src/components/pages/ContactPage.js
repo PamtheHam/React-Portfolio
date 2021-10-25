@@ -1,26 +1,61 @@
 import React from "react";
 import "materialize-css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ContactPage = () => {
   return (
     <div>
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s6">
-              <FontAwesomeIcon icon="user" />
-              {/* figure out how to use fontawesome icons */}
-              <input id="icon_prefix" type="text" class="validate" />
-              <label for="icon_prefix">First Name</label>
+      <div className="row-auth-wrapper">
+        <div className="form-wrapper z-depth-3">
+          <form id="create-account-form" className="form">
+            <h5 className="center-align form-header">Contact Me</h5>
+            <div className="input-field">
+              <input
+                id="first-name"
+                type="text"
+                className="validate"
+                placeholder="First Name"
+                required
+              ></input>
+              <label for="first-name"></label>
             </div>
-            <div class="input-field col s6">
-              <i class="material-icons prefix">phone</i>
-              <input id="icon_telephone" type="tel" class="validate" />
-              <label for="icon_telephone">Telephone</label>
+            <div className="input-field">
+              <input
+                id="last-name"
+                type="text"
+                className="validate"
+                placeholder="Last Name"
+              ></input>
+              <label for="last-name"></label>
             </div>
-          </div>
-        </form>
+            <div className="input-field">
+              <input
+                id="email"
+                type="email"
+                className="validate"
+                placeholder="Email"
+                required
+              ></input>
+              <label for="email"></label>
+            </div>
+            <div className="input-field">
+              <input
+                id="message"
+                type="text"
+                className="validate"
+                placeholder="Message"
+                required
+              ></input>
+              <label for="password"></label>
+            </div>
+            <button
+              id="create-account-button"
+              className="waves-effect btn submit-button center-align"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
