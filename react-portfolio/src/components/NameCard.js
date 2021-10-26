@@ -6,7 +6,7 @@ const NameCard = () => {
       <div className="row">
         <div className="col s6">
           <img
-            src="./images/PamelaHammond2.jpeg"
+            src={process.env.PUBLIC_URL + "/images/PamelaHammond2.jpeg"}
             className="headshot"
             alt="Pamela Hammond"
           />

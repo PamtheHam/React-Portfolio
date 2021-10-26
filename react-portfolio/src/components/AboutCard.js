@@ -6,7 +6,7 @@ const AboutCard = () => {
       <div className="row">
         <div className="col s6">
           <img
-            src="./images/BaekbeomPark.jpeg"
+            src={process.env.PUBLIC_URL + "/images/BaekbeomPark.jpeg"}
             className="about-img center-align"
             alt="Pamela Hammond in Baekbeom Park, Seoul South Korea"
           />

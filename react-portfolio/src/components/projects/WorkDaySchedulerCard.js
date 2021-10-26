@@ -1,16 +1,28 @@
-import React from "react";
+import * as React from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { CardActionArea, Container } from "@mui/material";
 
-const WorkDaySchedulerCard = () => {
+export default function WorkDaySchedulerCard() {
   return (
-    <div class="row">
-      <div class="col s12 m6">
-        <div class="card">
-          <div class="card-image">
-            {/* TO DO: change image of project */}
-            <img src="./images/SkyGazer.png" alt="Project Work Day Scheduler" />
-          </div>
-          <div class="card-content">
-            <p class="center-align">
+    <Container>
+      <Card sx={{ maxWidth: 820 }}>
+        <CardActionArea>
+          <CardMedia
+            component="img"
+            height="620"
+            image={process.env.PUBLIC_URL + "/images/WorkDayScheduler.png"}
+            alt="Project Work Day Scheduler"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              <a href="https://pamtheham.github.io/Work-Day-Scheduler/">
+                Work Day Scheduler on GitHub
+              </a>
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
               In this project, I modified starter code on a simple calendar
               application that allows a user to save events for each hour of the
               standard work day. This app will run in the browser and feature
@@ -19,17 +31,10 @@ const WorkDaySchedulerCard = () => {
               timeblock which will save the input and hour of the timeblock in
               local storage. Each timeblock is color coded so that past hours
               are grey, present hours are red, and future hours are green.
-            </p>
-          </div>
-          <div class="card-action hoverable center-align">
-            <a href="https://pamtheham.github.io/Work-Day-Scheduler/">
-              Work Day Scheduler on GitHub
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+    </Container>
   );
-};
-
-export default WorkDaySchedulerCard;
+}
