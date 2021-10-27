@@ -15,7 +15,7 @@ export default function FormPropsTextFields() {
       <div className="row-auth-wrapper">
         <div className="form-wrapper">
           <div className="form">
-            <h1 className="form-header"> Contact Me </h1>
+            <p className="nav-link"> Contact Me </p>
             <TextField
               fullWidth
               id="outlined-required"
@@ -28,7 +28,7 @@ export default function FormPropsTextFields() {
             />
             <TextField fullWidth id="outlined-required" placeholder="Email" />
             <TextField fullWidth id="outlined-required" placeholder="Message" />
-            <button className="submit-button">Send</button>
+            <button className="button">Send</button>
           </div>
         </div>
       </div>
