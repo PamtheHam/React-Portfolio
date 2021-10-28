@@ -12,6 +12,9 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
+main {
+  min-height: calc(100vh - 114px);
+}
 
 .navbar {
   background-color: rgb(115, 133, 114);
