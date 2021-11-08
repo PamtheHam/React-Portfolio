@@ -1,10 +1,10 @@
 import React from "react";
-import NoteTakerCard from "../projects/NoteTakerCard";
-import SkyGazerCard from "../projects/SkyGazerCard";
-import PFFCard from "../projects/PFFCard";
-import ReadMeGeneratorCard from "../projects/ReadMeGeneratorCard";
-import WorkDaySchedulerCard from "../projects/WorkDaySchedulerCard";
-import ReactTaskTrackerCard from "../projects/ReactTaskTrackerCard";
+import NoteTakerCard from "../components/projects/NoteTakerCard";
+import SkyGazerCard from "../components/projects/SkyGazerCard";
+import PFFCard from "../components/projects/PFFCard";
+import ReadMeGeneratorCard from "../components/projects/ReadMeGeneratorCard";
+import WorkDaySchedulerCard from "../components/projects/WorkDaySchedulerCard";
+import ReactTaskTrackerCard from "../components/projects/ReactTaskTrackerCard";
 
 const PortfolioPage = () => {
   return (

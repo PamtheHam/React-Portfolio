@@ -16,7 +16,7 @@ const NameCard = () => {
         <h5>Full Stack Web Developer</h5>
         <button className="button">
           <a
-            href="../images/PamelaHammondResume.pdf"
+            href="../../images/PamelaHammondResumePDF.pdf"
             download
             className="home-button"
           >
