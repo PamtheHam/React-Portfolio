@@ -8,14 +8,14 @@ import ReactTaskTrackerCard from "../components/projects/ReactTaskTrackerCard";
 
 const PortfolioPage = () => {
   return (
-    <>
+    <main>
       <ReactTaskTrackerCard />
       <PFFCard />
       <SkyGazerCard />
       <NoteTakerCard />
       <ReadMeGeneratorCard />
       <WorkDaySchedulerCard />
-    </>
+    </main>
   );
 };
 

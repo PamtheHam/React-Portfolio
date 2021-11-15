@@ -1,37 +1,64 @@
-import React from "react";
-import Box from "@mui/material/Box";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
+import { init } from "emailjs-com";
 import TextField from "@mui/material/TextField";
+init("user_lcufqfwTCpILtUaUtiswB");
 
-export default function FormPropsTextFields() {
+const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "contact_service",
+        "contact_form",
+        form.current,
+        "user_lcufqfwTCpILtUaUtiswB"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
-    <Box
-      component="form"
-      sx={{
-        "& .MuiTextField-root": { m: 1, width: "25ch" },
-      }}
-      noValidate
-      autoComplete="off"
-    >
+    <main>
       <div className="row-auth-wrapper">
         <div className="form-wrapper">
           <div className="form">
-            <p className="nav-link"> Contact Me </p>
-            <TextField
-              fullWidth
-              id="outlined-required"
-              placeholder="First Name"
-            />
-            <TextField
-              fullWidth
-              id="outlined-required"
-              placeholder="Last Name"
-            />
-            <TextField fullWidth id="outlined-required" placeholder="Email" />
-            <TextField fullWidth id="outlined-required" placeholder="Message" />
-            <button className="button">Send</button>
+            <form ref={form} onSubmit={sendEmail}>
+              <p className="nav-link">Contact Me</p>
+              <label>Name</label>
+              <TextField
+                fullWidth
+                id="outlined-required"
+                type="text"
+                name="user_name"
+              />
+              <label>Email</label>
+              <TextField
+                fullWidth
+                id="outlined-required"
+                type="email"
+                name="user_email"
+              />
+              <label>Message</label>
+              <TextField fullWidth id="outlined-required" name="message" />
+              <button className="button" type="submit" value="Send">
+                Send
+              </button>
+            </form>
           </div>
         </div>
       </div>
-    </Box>
+    </main>
   );
-}
+};
+
+export default ContactUs;
